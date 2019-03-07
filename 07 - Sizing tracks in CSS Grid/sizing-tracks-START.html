@@ -11,7 +11,7 @@
 <body>
   <div class="container">
     <div class="item">1</div>
-    <div class="item">2</div>
+    <div class="item">long container</div>
     <div class="item">3</div>
     <div class="item">4</div>
     <div class="item">5</div>
@@ -26,11 +26,14 @@
     <div class="item">14</div>
     <div class="item">15</div>
   </div>
-
+<!-- fr units are the amount of space left after everything is layed out -->
+<!-- similar to flex grow/shrink -->
   <style>
     .container {
       display: grid;
       grid-gap: 20px;
+      grid-template-columns: 1fr auto 1fr auto;
+      border: 10px solid var(--yellow);
     }
   </style>
 </body>
